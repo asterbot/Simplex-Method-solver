@@ -8,7 +8,7 @@ m n
 A(row-wise)
 b(single line)
 c(single line)
-y/n 
+y/n(whether basis is provided)
 B(if y, else ignore this line)
 z
 ```
