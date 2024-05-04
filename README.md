@@ -11,12 +11,14 @@ c(single line)
 y/n 
 B(if y, else ignore this line)
 z
-
-For the LP
-max c^Tx + z
-s.t. Ax=b, x>=0 
-(and basis B if provided)
 ```
+For the linear program of the form: 
+>max $c^Tx + z$ \
+such that $Ax=b, x \ge 0$ \
+\
+Basis $B$ if provided \
+and $A \in \R^{m \times n}$, $b \in \R^m$, $x \in \R^n$
+
 
 and run:
 
