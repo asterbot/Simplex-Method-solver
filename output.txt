@@ -1,0 +1,52 @@
+Original LP is:
+max [3.0 4.0 0.0 0.0]x + 0.0
+s.t.
+[[1.0 1.0 1.0 0.0]
+ [-1.0 1.0 0.0 1.0]]x = [40.0 60.0]^T
+x >= 0
+
+
+Iteration 1:
+Current basis: B= [3 4]
+A_B_inv = 
+[[1.0 0.0]
+ [0.0 1.0]]
+
+Current canonical form is:
+max [3.0 4.0 0.0 0.0]x + 0.0
+s.t. 
+[[1.0 1.0 1.0 0.0]
+ [-1.0 1.0 0.0 1.0]]x = [40.0 60.0]^T
+x >= 0
+
+Iteration 2:
+Current basis: B= [1 4]
+A_B_inv = 
+[[1.0 0.0]
+ [1.0 1.0]]
+
+Current canonical form is:
+max [0.0 1.0 -3.0 0.0]x + 120.0
+s.t. 
+[[1.0 1.0 1.0 0.0]
+ [0.0 2.0 1.0 1.0]]x = [40.0 100.0]^T
+x >= 0
+
+Iteration 3:
+Current basis: B= [2 4]
+A_B_inv = 
+[[1.0 0.0]
+ [-2.0 1.0]]
+
+Current canonical form is:
+max [-1.0 0.0 -4.0 0.0]x + 160.0
+s.t. 
+[[1.0 1.0 1.0 0.0]
+ [-2.0 0.0 -1.0 1.0]]x = [40.0 20.0]^T
+x >= 0
+
+
+Optimal solution found:
+Certificate: y^T=  [1.0 0.0]
+Objective value = 160.0
+Final result: x=[ 0. 40.  0. 20.], B=[2 4]
