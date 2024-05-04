@@ -1,6 +1,6 @@
 # Simplex-Method-solver
 
-Solves Linear Programs using the [Simplex Algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm)
+Solves Linear Programs using the [Simplex Algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) with the python script.
 
 Add the data in `input.txt` using the following format:
 ```
@@ -17,7 +17,7 @@ For the linear program of the form:
 such that $Ax=b, x \ge 0$ \
 \
 Basis $B$ if provided \
-and $A \in \R^{m \times n}$, $b \in \R^m$, $x \in \R^n$
+and $A \in \mathbb{R}^{m \times n}$, $b \in \mathbb{R}^m$, $x \in \mathbb{R}^n$
 
 
 and run:
