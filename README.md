@@ -5,11 +5,11 @@ Solves Linear Programs using the [Simplex Algorithm](https://en.wikipedia.org/wi
 Add the data in `input.txt` using the following format:
 ```
 m n
-A(row-wise)
-b(single line)
-c(single line)
-y/n(whether basis is provided)
-B(if y, else ignore this line)
+A   # (row-wise)
+b   # (single line)
+c   # (single line)
+y/n # (whether basis is provided)
+B   # (if previous line was y, else ignore this line)
 z
 ```
 For the linear program of the form: 
