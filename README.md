@@ -3,7 +3,7 @@
 Solves Linear Programs using the [Simplex Algorithm](https://en.wikipedia.org/wiki/Simplex_algorithm) with the python script.
 
 Add the data in `input.txt` using the following format:
-```
+```bash
 m n
 A   # (row-wise)
 b   # (single line)
