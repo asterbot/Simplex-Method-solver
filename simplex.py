@@ -28,31 +28,6 @@ def restrict_vector(c,B):
     #restricts c to the columns in B
     return np.array([c[i] for i in (B-1)])
     
-
-m,n=map(int, input().split())
-
-A=[]
-for i in range(m):
-    A.append(list(map(float, input().split(" "))))
-A=np.array(A)
-
-b=list(map(float, input().split(" ")))
-b=np.array(b).T
-
-c=list(map(float, input().split(" ")))
-c=np.array(c).T
-
-maybe = input()
-if maybe=="y":
-    B=list(map(int, input().split(" ")))
-    B=np.array(B)
-else:
-    B=np.array([i for i in range(1,n+1)])
-
-z=float(input())
-
-
-
 def canonical_form(A,b,c,z,B):
     A_B = restrict(A,B)
     A_B_inv = np.linalg.inv(A_B)
@@ -147,6 +122,28 @@ def phase_1(A,b):
         phase_2_result=simplex(A,b,c,z,result[1],m,n)
         return phase_2_result
         
+
+m,n=map(int, input().split())
+
+A=[]
+for i in range(m):
+    A.append(list(map(float, input().split(" "))))
+A=np.array(A)
+
+b=list(map(float, input().split(" ")))
+b=np.array(b).T
+
+c=list(map(float, input().split(" ")))
+c=np.array(c).T
+
+maybe = input()
+if maybe=="y":
+    B=list(map(int, input().split(" ")))
+    B=np.array(B)
+else:
+    B=np.array([i for i in range(1,n+1)])
+
+z=float(input())
 
 
 if maybe=="n":
